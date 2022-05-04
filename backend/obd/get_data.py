@@ -21,3 +21,7 @@ def get_data():
     resp = {key: conn.query(cmd) for key, cmd in cmds.items()}
 
     return json.dumps(resp)
+
+if __name__ == '__main__':
+    conn = get_conn()
+    # Get rfcomm connection working to access data

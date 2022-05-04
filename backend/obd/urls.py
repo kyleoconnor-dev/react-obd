@@ -3,5 +3,5 @@ from . import views
 
 # URLConfig
 urlpatterns = [
-    path('hello/', views.get_obd)
+    path('getObdData', views.get_obd)
 ]
